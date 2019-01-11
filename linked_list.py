@@ -126,6 +126,23 @@ class SingleLinkedList:
     current_node.next = previous_node
     self.head = current_node
     return
+  
+  def remove_value(self, value):
+    #remove the first item in the list with this value
+
+    previous_node = None
+    current_node = self.head
+
+    while current_node is not None:
+      if current_node.data == value:
+        previous_node.next = current_node.next
+        return
+
+      previous_node = current_node
+      current_node = current_node.next
+
+    return
+
 
 
   
@@ -136,4 +153,5 @@ list1.add_list_item(15)
 list1.add_list_item(17)
 list1.remove_list_item_by_id(3)
 list1.reverse()
+list1.remove_value(15)
 list1.output_list()
