@@ -145,7 +145,7 @@ class SingleLinkedList:
 
 
 
-  
+"""
 list1 = SingleLinkedList()
 list1.add_list_item(node1)
 list1.add_list_item('12')
@@ -155,3 +155,4 @@ list1.remove_list_item_by_id(3)
 list1.reverse()
 list1.remove_value(15)
 list1.output_list()
+"""

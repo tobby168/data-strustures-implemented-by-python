@@ -21,6 +21,10 @@ class Stack:
 
     return self.stack.pop()
 
+  def top(self):
+    # get the data value of the top item
+    return self.stack[-1]
+
   def output_stack(self):
     # print the full stack
     
@@ -31,6 +35,7 @@ class Stack:
     print(data)
     return
 
+"""
 stack1 = Stack()
 stack1.push(1)
 stack1.push(3)
@@ -41,3 +46,5 @@ stack1.output_stack()
 stack2 = Stack([4,6,2,1,6,3])
 stack2.pop()
 stack2.output_stack()
+print(stack2.top())
+"""
