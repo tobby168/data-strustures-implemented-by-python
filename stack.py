@@ -10,6 +10,9 @@ class Stack:
       raise ValueError('input data should be list')
     return
 
+  def __iter__(self):
+    return iter(self.stack)
+
   def push(self, data):
     # put data into the top of stack
 
@@ -46,5 +49,6 @@ stack1.output_stack()
 stack2 = Stack([4,6,2,1,6,3])
 stack2.pop()
 stack2.output_stack()
-print(stack2.top())
+for x in stack2:
+  print(x)
 """
